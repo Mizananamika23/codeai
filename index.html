@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CodeAI</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>CodeAI Generator</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Welcome to CodeAI!</h1>
-  <p>This is your first live project deployed with GitHub & Vercel.</p>
+  <h1>CodeAI: Natural Language to Code</h1>
+  
+  <textarea id="userInput" placeholder="এখানে লিখুন আপনি কী কোড চান..." rows="4" cols="50"></textarea>
+  
+  <br><br>
+  <select id="codeType">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="python">Python</option>
+  </select>
+
+  <button onclick="generateCode()">Generate Code</button>
+
+  <h3>Generated Code:</h3>
+  <pre id="outputCode"></pre>
 </body>
 </html>
